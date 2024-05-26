@@ -143,6 +143,22 @@ const routes = [
       import(
         /* webpackChunkName: "todo" , webpackPrefetch: true*/ '../views/6_vuex/TodoView.vue'
       )
+  },
+  {
+    path: '/template/p1/single',
+    name: 'SingViewEditView',
+    component: () =>
+      import(
+        /* webpackChunkName: "todo" , webpackPrefetch: true*/ '../views/11_template/p1/SingleViewEditView.vue'
+      )
+  },
+  {
+    path: '/template/p1/mixin',
+    name: 'MixinView',
+    component: () =>
+      import(
+        /* webpackChunkName: "todo" , webpackPrefetch: true*/ '../views/5_advanced/MixinView.vue'
+      )
   }
 ]
 

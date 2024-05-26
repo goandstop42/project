@@ -4,10 +4,11 @@
 
 <script>
 export default {
-  name: 'SetupView',
+  name: 'MixinView',
   data() {
     return {}
   }
 }
 </script>
+
 <style scoped></style>
