@@ -8,6 +8,13 @@ import 'bootstrap/dist/js/bootstrap.js'
 import i18nPlugin from './plugins/i18n'
 import en from '@/i18n/en'
 import ko from '@/i18n/ko'
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faUserSecret, faUserClock } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faUserSecret)
+library.add(faUserClock)
 
 const i18nStrings = { en, ko }
 
@@ -16,5 +23,5 @@ app.use(store)
 app.use(router)
 app.use(i18nPlugin, i18nStrings)
 app.component('page-tile', PageTitle)
-
+app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')

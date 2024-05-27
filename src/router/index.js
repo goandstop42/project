@@ -159,6 +159,14 @@ const routes = [
       import(
         /* webpackChunkName: "todo" , webpackPrefetch: true*/ '../views/5_advanced/MixinView.vue'
       )
+  },
+  {
+    path: '/module/font',
+    name: 'FontView',
+    component: () =>
+      import(
+        /* webpackChunkName: "font" , webpackPrefetch: true*/ '../views/9_module/FontawesomeView.vue'
+      )
   }
 ]
 
