@@ -17,6 +17,15 @@ export default {
         lang: 'ko'
       }
     }
+  },
+  mounted() {
+    this.getCustomers()
+  },
+  methods: {
+    async getCustomers() {
+      const customers = await this.$get('http://localhost:3000/customers')
+      console.log(customers)
+    }
   }
 }
 </script>

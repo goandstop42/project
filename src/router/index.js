@@ -167,7 +167,52 @@ const routes = [
       import(
         /* webpackChunkName: "font" , webpackPrefetch: true*/ '../views/9_module/FontawesomeView.vue'
       )
+  },
+  {
+    path: '/module/sweetAlert',
+    name: 'SweetAlert2View',
+    component: () =>
+      import(
+        /* webpackChunkName: "font" , webpackPrefetch: true*/ '../views/9_module/SweetAlert2.vue'
+      )
+  },
+  {
+    path: '/template/p3/list',
+    name: 'ListToDetailView',
+    component: () =>
+      import(
+        /* webpackChunkName: "template" , webpackPrefetch: true*/ '../views/11_template/p3/ListToDetailView.vue'
+      )
+  },
+  {
+    path: '/advanced/mix',
+    name: 'MixinView',
+    component: () =>
+      import(
+        /* webpackChunkName: "advanced" , webpackPrefetch: true*/ '../views/5_advanced/MixinView.vue'
+      )
   }
+  // {
+  //   path: '/template/p3/detail/:id',
+  //
+  //   name: 'DetailView',
+  //
+  //   component: () =>
+  //     import(
+  //       /* webpackChunkName: "template", webpackPrefetch:true */ '../views/11_template/p3/DetailView.vue'
+  //     )
+  // },
+  //
+  // {
+  //   path: '/template/p3/edit/:id',
+  //
+  //   name: 'EditView',
+  //
+  //   component: () =>
+  //     import(
+  //       /* webpackChunkName: "template", webpackPrefetch:true */ '../views/11_template/p3/EditView.vue'
+  //     )
+  // }
 ]
 
 const router = createRouter({

@@ -146,10 +146,10 @@ export default {
           address: ''
         }
       } else {
-        // this.customer = await this.$get('http://localhost:8080/customers.json')
-        this.customer = this.customers.find(
-          (customer) => customer.id === this.selectedCustomerId
-        )
+        this.customer = await this.$get('http://localhost:8080/customers.json')
+        // this.customer = this.customers.find(
+        //   (customer) => customer.id === this.selectedCustomerId
+        // )
       }
     },
     async doSave() {

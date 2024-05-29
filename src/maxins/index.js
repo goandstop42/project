@@ -5,7 +5,9 @@ import { saveAs } from 'file-saver'
 axios.defaults.baseURL = 'http://localhost:3000'
 axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 axios.defaults.headers['Access-Control-Allow-Origin'] = '*'
-
+axios.defaults.headers['Access-Control-Allow-Methods'] =
+  'GET, POST, PUT, DELETE, PATCH, OPTIONS' // Allow any origin
+axios.defaults.withCredentials = true
 export default {
   methods: {
     async $get(url) {
